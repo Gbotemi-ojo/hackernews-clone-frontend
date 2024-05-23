@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  background-color: rgb(255, 102, 0);
+  align-items: center;
+  height: fit-content;
+  max-height: 18px;
+  margin: auto;
+  font-size: 16px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.nav_elements {
+  display: flex;
+  align-items: center;
+  margin: 1px;
+  padding: 1px;
+}
+ul {
+  list-style-type: none;
+}
+
+li:not(:last-child) {
+  border-right: 1px solid black;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+li:last-child {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.name_logout {
+  display: flex;
+  gap: 5px;
+}
+.hacker_news {
+  font-weight: 800;
+  font-size: 16px;
+}
+.logo {
+  border: 1px solid white;
+}
