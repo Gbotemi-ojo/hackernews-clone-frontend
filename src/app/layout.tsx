@@ -18,31 +18,32 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="nav">
-          <ul className="nav_elements">
-            <Image
-              src="/y18.svg"
-              alt="Vercel Logo"
-              className={"logo"}
-              width={20}
-              height={20}
-              priority
-            />
-            <li className="hacker_news">Hacker News</li>
-            <li>new</li>
-            <li>threads</li>
-            <li>past</li>
-            <li>comments</li>
-            <li>ask</li>
-            <li>show</li>
-            <li>jobs</li>
-            <li>submit</li>
-          </ul>
-          <ul className="name_logout">
-            <li>Gbotex</li>
-            <li>Logout</li>
-          </ul>
-        </nav>
+        <header>
+          <div className="container">
+            <div className="header-content">
+              <div className="logo-title">
+                <a href="#" className="logo">
+                  <img src="logo.png" alt="Hacker News" />
+                </a>
+                <a href="#" className="title">
+                  Hacker News
+                </a>
+              </div>
+              <nav className="nav-links">
+                <a href="#">new</a>
+                <a href="#">past</a>
+                <a href="#">comments</a>
+                <a href="#">ask</a>
+                <a href="#">show</a>
+                <a href="#">jobs</a>
+                <a href="#">submit</a>
+              </nav>
+              <div className="login">
+                <a href="#">login</a>
+              </div>
+            </div>
+          </div>
+        </header>
         {children}
       </body>
     </html>

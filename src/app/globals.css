@@ -1,44 +1,60 @@
-.nav {
+header {
+  background-color: #ff6600;
+  padding: 2px 5px;
+}
+
+.header-content {
   display: flex;
-  width: 85%;
+  align-items: center;
   justify-content: space-between;
-  background-color: rgb(255, 102, 0);
-  align-items: center;
-  height: fit-content;
-  max-height: 18px;
-  margin: auto;
-  font-size: 16px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-.nav_elements {
-  display: flex;
-  align-items: center;
-  margin: 1px;
-  padding: 1px;
-}
-ul {
-  list-style-type: none;
+  flex-wrap: wrap;
 }
 
-li:not(:last-child) {
-  border-right: 1px solid black;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-li:last-child {
-  padding-left: 8px;
-  padding-right: 8px;
+.logo-title {
+  display: flex;
+  align-items: center;
 }
 
-.name_logout {
+.logo img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.title {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
   display: flex;
-  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 0;
+  gap: 10px;
 }
-.hacker_news {
-  font-weight: 800;
-  font-size: 16px;
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 5px;
 }
-.logo {
-  border: 1px solid white;
+
+.login a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links, .login {
+    margin-top: 10px;
+  }
 }
